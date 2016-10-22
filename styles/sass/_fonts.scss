@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "RalewayBold";    
+    src: url("../fonts/Raleway-Bold.ttf");    
+    font-weight: 600;
+}
+@font-face {
+    font-family: "OpenSansRegular";    
+    src: url("../fonts/OpenSans-Regular.ttf");    
+    font-weight: 400;
+}
+@font-face {
+    font-family: "OpenSansBold";    
+    src: url("../fonts/OpenSans-Bold.ttf");    
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Raleway-Regular";    
+    src: url("../fonts/Raleway-Regular.ttf");    
+    font-weight: 600;
+}
+
+@mixin raleway-bold-16{
+	font-size: 16px;
+    font-family: "RalewayBold";
+
+}
+@mixin raleway-bold-72{
+	font-size: 72px;
+    font-family: "RalewayBold";
+
+}
+@mixin raleway-bold-14{
+	font-size: 14px;
+    font-family: "RalewayBold";
+
+}
+@mixin opensans-regular-30{
+	font-size: 30px;
+    font-family: "OpenSansRegular";
+
+}
+@mixin opensans-regular-14{
+	font-size: 14px;
+    font-family: "OpenSansRegular";
+
+}
+@mixin opensans-regular-18{
+	font-size: 18px;
+    font-family: "OpenSansRegular";
+}
+@mixin opensans-regular-16{
+	font-size: 16px;
+    font-family: "OpenSansRegular";
+}
+@mixin opensans-bold-18{
+	font-size: 18px;
+    font-family: "OpenSansBold";
+}
+@mixin opensans-bold-16{
+	font-size: 16px;
+    font-family: "OpenSansBold";
+}
+@mixin raleway-regular-30{
+	font-size: 30px;
+    font-family: "Raleway-Regular";
+}
+@mixin raleway-regular-20{
+	font-size: 20px;
+    font-family: "Raleway-Regular";
+}

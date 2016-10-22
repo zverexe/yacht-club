@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advocat</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="styles/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="header-top-controls">
+                        <div class="logo pull-left">
+                            <img src="images/Inteligentny-obiekt-wektorowy.png" height="33" width="166" alt="">
+                        </div>
+                        <div class="left-controls pull-right">
+                            <ul class="list-unstyled list-inline">
+                                <li><a href="">TOP DESTINATIONS</a></li>
+                                <li><a href="">ADD YOUR BOAT</a></li>
+                                <li class="sign-up"><a href="" data-toggle="modal" data-target="#login-modal">LOG IN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BEGIN # MODAL LOGIN -->
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" align="center">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <!-- Begin # DIV Form -->
+                        <div id="div-forms">
+                            <!-- Begin # Login Form -->
+                            <form id="login-form">
+                                <div class="modal-body">
+                                    <div id="div-login-msg">
+                                        <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                        <span id="text-login-msg">Type your username and password.</span>
+                                    </div>
+                                    <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                    <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                    </div>
+                                    <div>
+                                        <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                        <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End # Login Form -->
+                            <!-- Begin | Lost Password Form -->
+                            <form id="lost-form" style="display:none;">
+                                <div class="modal-body">
+                                    <div id="div-lost-msg">
+                                        <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                        <span id="text-lost-msg">Type your e-mail.</span>
+                                    </div>
+                                    <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                    </div>
+                                    <div>
+                                        <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                        <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End | Lost Password Form -->
+                            <!-- Begin | Register Form -->
+                            <form id="register-form" style="display:none;">
+                                <div class="modal-body">
+                                    <div id="div-register-msg">
+                                        <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                        <span id="text-register-msg">Register an account.</span>
+                                    </div>
+                                    <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                    <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                                    <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                    </div>
+                                    <div>
+                                        <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                        <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End | Register Form -->
+                        </div>
+                        <!-- End # DIV Form -->
+                    </div>
+                </div>
+            </div>
+            <!-- END # MODAL LOGIN -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-main-content">
+                        <h1>RESERVE A BOAT NOW!</h1>
+                        <p>and set your sails into paradise!</p>
+                        <div class="header-form">
+                            <form action="" class="form">
+                                <input type="text" class="header-form-input" placeholder="What is your destination, sailor ?">
+                                <button type="submit" class="btn">Find boat</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="first-content-block">
+        <div class="container">
+            <div class="statistics-bar">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <h3>2,300</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h3>1000</h3>
+                        <p>Cities</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <h3>35,000</h3>
+                        <p>Boats</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <h3>50,0000</h3>
+                        <p>Sailors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="explore">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h3 class="text-center">EXPLORE OUR TOP DESTINATIONS</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destinations-item">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="portugal items">
+                            <img src="images/photo-1452838157761-5f502d8ce4742.png" class="img-responsive" alt="">
+                            <div class="qty hidd">
+                                <div class="test">
+                                    <img src="images/sailboat.png" height="16" width="16" alt="">
+                                    <p>730</p>
+                                </div>
+                            </div>
+                            <div class="location hidd">
+                                <h4>Figueira da Foz</h4>
+                                <p>Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="ibiza items">
+                            <img src="images/3Q7GJTVIRN.png" class="img-responsive" alt="">
+                            <div class="qty-2 hidd">
+                                <div class="test">
+                                    <img src="images/sailboat.png" height="16" width="16" alt="">
+                                    <p>621</p>
+                                </div>
+                            </div>
+                            <div class="location-2 hidd">
+                                <h4>Ibiza</h4>
+                                <p>Spain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destinations-item-2">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="palma items">
+                            <img src="images/sea-mountains-bay-boats.png" class="img-responsive" alt="">
+                            <div class="qty-3 hidd">
+                                <div class="test">
+                                    <img src="images/sailboat.png" height="16" width="16" alt="">
+                                    <p>543</p>
+                                </div>
+                            </div>
+                            <div class="location-3 hidd">
+                                <h4>Palma de Malorca</h4>
+                                <p>Spain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="italy items">
+                            <img src="images/F6D060C8B9.png" class="img-responsive" alt="">
+                            <div class="qty-4 hidd">
+                                <div class="test">
+                                    <img src="images/sailboat.png" height="16" width="16" alt="">
+                                    <p>495</p>
+                                </div>
+                            </div>
+                            <div class="location-4 hidd">
+                                <h4>Portofino</h4>
+                                <p>Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="monaco items">
+                            <img src="images/C5EB3C6FB6.png" class="img-responsive" alt="">
+                            <div class="qty-5 hidd">
+                                <div class="test">
+                                    <img src="images/sailboat.png" height="16" width="16" alt="">
+                                    <p>402</p>
+                                </div>
+                            </div>
+                            <div class="location-5 hidd">
+                                <h4>Port Hercules</h4>
+                                <p>Monaco</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-destinations">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <button class="btn"><a href="">EXPLORE MORE DESTINATIONS</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-content-block">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/Prostokąt-1-kopia1.png" data-position="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="second-content-text">
+                            <h1>HAVE YOUR OWN BOAT?</h1>
+                            <p>NAVIGARE NECESSE EST, VIVERE NON EST NECESSE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-content-btn">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <button class="btn"><a href="">MAKE MONEY WITH YOUR BOAT</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2 class="text-center">FEATURED BOATS</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                </div>
+            </div>
+            <div class="featured-boats">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="dolphina items">
+                            <img src="images/cruiser41s.png" class="img-responsive" alt="">
+                            <div class="price hidd">
+                                <div class="test">
+                                    <p>$580 / day</p>
+                                </div>
+                            </div>
+                            <div class="location-6 hidd">
+                                <h4>Dolphina 47</h4>
+                                <div class="map-location">
+                                    <p>Gdansk, Poland</p>
+                                    <p>8 Berths</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="sense items">
+                            <img src="images/20048-3300983.png" class="img-responsive" alt="">
+                            <div class="price-2 hidd">
+                                <div class="test">
+                                    <p>$950 / day</p>
+                                </div>
+                            </div>
+                            <div class="location-7 hidd">
+                                <h4>Sense 58</h4>
+                                <div class="map-location">
+                                    <p>Portofino, Italy</p>
+                                    <p>12 Berths</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="cruiser items">
+                            <img src="images/CR51_Exterior_1.png" class="img-responsive" alt="">
+                            <div class="price-3 hidd">
+                                <div class="test">
+                                    <p>$820 / day</p>
+                                </div>
+                            </div>
+                            <div class="location-8 hidd">
+                                <h4>Cruiser 51</h4>
+                                <div class="map-location">
+                                    <p>Palma de Malorka, Spain</p>
+                                    <p>10 Berths</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="cruisers items">
+                            <img src="images/crynoline_1_pic1.png" class="img-responsive" alt="">
+                            <div class="price-4 hidd">
+                                <div class="test">
+                                    <p>$400 / day</p>
+                                </div>
+                            </div>
+                            <div class="location-9 hidd">
+                                <h4>Cruiser 41S</h4>
+                                <div class="map-location">
+                                    <p>Lisbon, Portugal</p>
+                                    <p>8 Berths</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-boats">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <button class="btn"><a href="">LOAD MORE BOATS</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <h5>TOP LOCATIONS</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Lorem ipsum dolor</a></li>
+              <li><a href="">Sit amet consecteur</a></li>
+              <li><a href="">Adipisicing elit</a></li>
+              <li><a href="">Eismond tempor</a></li>
+              <li><a href="">Indictur ut labore</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <h5>FEATURED BOATS</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Lorem ipsum dolor</a></li>
+              <li><a href="">Sit amet consecteur</a></li>
+              <li><a href="">Adipisicing elit</a></li>
+              <li><a href="">Eismond tempor</a></li>              
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+            <form action="" class="subscribtion-form">
+              <input type="text" class="footer-form-input" placeholder="Your email adress">
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <div class="social-media-btn">
+              <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+              <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+              <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <h5>CONTACT US</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Lorem ipsum dolor</a></li>
+              <li><a href="">Sit amet consecteur</a></li>
+              <li><a href="">Adipisicing elit</a></li>
+              <li><a href="">Eismond tempor</a></li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/parallax.js/parallax.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
