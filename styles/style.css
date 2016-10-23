@@ -161,7 +161,8 @@ header {
         height: 60px;
         border: none;
         width: 100%;
-        padding-left: 5%; }
+        padding-left: 5%;
+        color: #404040; }
       header .header-main-content .header-form button {
         position: absolute;
         right: 15px;
@@ -222,35 +223,15 @@ header {
   .first-content-block .destinations-item-2 .items img {
     opacity: 1;
     transition: opacity .5s; }
-  .first-content-block .destinations-item .dolphina:hover .img-responsive,
-  .first-content-block .destinations-item .sense:hover .img-responsive,
-  .first-content-block .destinations-item .italy:hover .img-responsive,
-  .first-content-block .destinations-item .monaco:hover .img-responsive,
-  .first-content-block .destinations-item .palma:hover .img-responsive,
-  .first-content-block .destinations-item .ibiza:hover .img-responsive,
-  .first-content-block .destinations-item .portugal:hover .img-responsive,
-  .first-content-block .destinations-item-2 .dolphina:hover .img-responsive,
-  .first-content-block .destinations-item-2 .sense:hover .img-responsive,
-  .first-content-block .destinations-item-2 .italy:hover .img-responsive,
-  .first-content-block .destinations-item-2 .monaco:hover .img-responsive,
-  .first-content-block .destinations-item-2 .palma:hover .img-responsive,
-  .first-content-block .destinations-item-2 .ibiza:hover .img-responsive,
-  .first-content-block .destinations-item-2 .portugal:hover .img-responsive {
+  .first-content-block .destinations-item .items:hover .img-responsive,
+  .first-content-block .destinations-item-2 .items:hover .img-responsive {
     opacity: .5; }
   .first-content-block .destinations-item .items,
   .first-content-block .destinations-item-2 .items {
     position: relative;
     cursor: pointer; }
     .first-content-block .destinations-item .items .qty,
-    .first-content-block .destinations-item .items .qty-2,
-    .first-content-block .destinations-item .items .qty-3,
-    .first-content-block .destinations-item .items .qty-4,
-    .first-content-block .destinations-item .items .qty-5,
-    .first-content-block .destinations-item-2 .items .qty,
-    .first-content-block .destinations-item-2 .items .qty-2,
-    .first-content-block .destinations-item-2 .items .qty-3,
-    .first-content-block .destinations-item-2 .items .qty-4,
-    .first-content-block .destinations-item-2 .items .qty-5 {
+    .first-content-block .destinations-item-2 .items .qty {
       position: absolute;
       top: 15px;
       left: 25px;
@@ -261,15 +242,7 @@ header {
       background-color: #e7434e;
       border-radius: 5px; }
       .first-content-block .destinations-item .items .qty .test,
-      .first-content-block .destinations-item .items .qty-2 .test,
-      .first-content-block .destinations-item .items .qty-3 .test,
-      .first-content-block .destinations-item .items .qty-4 .test,
-      .first-content-block .destinations-item .items .qty-5 .test,
-      .first-content-block .destinations-item-2 .items .qty .test,
-      .first-content-block .destinations-item-2 .items .qty-2 .test,
-      .first-content-block .destinations-item-2 .items .qty-3 .test,
-      .first-content-block .destinations-item-2 .items .qty-4 .test,
-      .first-content-block .destinations-item-2 .items .qty-5 .test {
+      .first-content-block .destinations-item-2 .items .qty .test {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
@@ -280,14 +253,8 @@ header {
         color: #ffffff; }
     .first-content-block .destinations-item .items .location,
     .first-content-block .destinations-item .items .location-2,
-    .first-content-block .destinations-item .items .location-3,
-    .first-content-block .destinations-item .items .location-4,
-    .first-content-block .destinations-item .items .location-5,
     .first-content-block .destinations-item-2 .items .location,
-    .first-content-block .destinations-item-2 .items .location-2,
-    .first-content-block .destinations-item-2 .items .location-3,
-    .first-content-block .destinations-item-2 .items .location-4,
-    .first-content-block .destinations-item-2 .items .location-5 {
+    .first-content-block .destinations-item-2 .items .location-2 {
       position: absolute;
       top: 275px;
       left: 25px;
@@ -296,27 +263,15 @@ header {
       color: #ffffff; }
       .first-content-block .destinations-item .items .location h4,
       .first-content-block .destinations-item .items .location-2 h4,
-      .first-content-block .destinations-item .items .location-3 h4,
-      .first-content-block .destinations-item .items .location-4 h4,
-      .first-content-block .destinations-item .items .location-5 h4,
       .first-content-block .destinations-item-2 .items .location h4,
-      .first-content-block .destinations-item-2 .items .location-2 h4,
-      .first-content-block .destinations-item-2 .items .location-3 h4,
-      .first-content-block .destinations-item-2 .items .location-4 h4,
-      .first-content-block .destinations-item-2 .items .location-5 h4 {
+      .first-content-block .destinations-item-2 .items .location-2 h4 {
         font-size: 30px;
         font-family: "Raleway-Regular";
         margin-bottom: 0px; }
       .first-content-block .destinations-item .items .location p,
       .first-content-block .destinations-item .items .location-2 p,
-      .first-content-block .destinations-item .items .location-3 p,
-      .first-content-block .destinations-item .items .location-4 p,
-      .first-content-block .destinations-item .items .location-5 p,
       .first-content-block .destinations-item-2 .items .location p,
-      .first-content-block .destinations-item-2 .items .location-2 p,
-      .first-content-block .destinations-item-2 .items .location-3 p,
-      .first-content-block .destinations-item-2 .items .location-4 p,
-      .first-content-block .destinations-item-2 .items .location-5 p {
+      .first-content-block .destinations-item-2 .items .location-2 p {
         font-size: 20px;
         font-family: "Raleway-Regular"; }
     .first-content-block .destinations-item .items .hidd,
@@ -394,18 +349,12 @@ header {
   .third-content-block .items img {
     opacity: 1;
     transition: opacity .5s; }
-  .third-content-block .dolphina:hover .img-responsive,
-  .third-content-block .sense:hover .img-responsive,
-  .third-content-block .cruiser:hover .img-responsive,
-  .third-content-block .cruisers:hover .img-responsive {
+  .third-content-block .items:hover .img-responsive {
     opacity: .5; }
   .third-content-block .items {
     position: relative;
     cursor: pointer; }
-    .third-content-block .items .price,
-    .third-content-block .items .price-2,
-    .third-content-block .items .price-3,
-    .third-content-block .items .price-4 {
+    .third-content-block .items .price {
       position: absolute;
       top: 30px;
       left: 25px;
@@ -425,10 +374,7 @@ header {
         font-size: 16px;
         font-family: "OpenSansBold";
         color: #ffffff; }
-    .third-content-block .items .location-6,
-    .third-content-block .items .location-7,
-    .third-content-block .items .location-8,
-    .third-content-block .items .location-9 {
+    .third-content-block .items .location-3 {
       position: absolute;
       top: 250px;
       left: 25px;
@@ -437,25 +383,16 @@ header {
       font-size: 30px;
       font-family: "Raleway-Regular";
       color: #ffffff; }
-      .third-content-block .items .location-6 .map-location,
-      .third-content-block .items .location-7 .map-location,
-      .third-content-block .items .location-8 .map-location,
-      .third-content-block .items .location-9 .map-location {
+      .third-content-block .items .location-3 .map-location {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-        .third-content-block .items .location-6 .map-location p,
-        .third-content-block .items .location-7 .map-location p,
-        .third-content-block .items .location-8 .map-location p,
-        .third-content-block .items .location-9 .map-location p {
+        .third-content-block .items .location-3 .map-location p {
           color: #ffffff;
           font-size: 16px;
           font-family: "OpenSansRegular"; }
-        .third-content-block .items .location-6 .map-location p:last-child,
-        .third-content-block .items .location-7 .map-location p:last-child,
-        .third-content-block .items .location-8 .map-location p:last-child,
-        .third-content-block .items .location-9 .map-location p:last-child {
+        .third-content-block .items .location-3 .map-location p:last-child {
           margin-left: 20px; }
     .third-content-block .items .hidd {
       display: none; }
@@ -530,20 +467,11 @@ footer {
 @media screen and (max-width: 1200px) {
   .first-content-block .destinations-item .items .location,
   .first-content-block .destinations-item .items .location-2,
-  .first-content-block .destinations-item .items .location-3,
-  .first-content-block .destinations-item .items .location-4,
-  .first-content-block .destinations-item .items .location-5,
   .first-content-block .destinations-item-2 .items .location,
-  .first-content-block .destinations-item-2 .items .location-2,
-  .first-content-block .destinations-item-2 .items .location-3,
-  .first-content-block .destinations-item-2 .items .location-4,
-  .first-content-block .destinations-item-2 .items .location-5 {
+  .first-content-block .destinations-item-2 .items .location-2 {
     position: absolute;
     top: 180px; }
-  .third-content-block .items .location-6,
-  .third-content-block .items .location-7,
-  .third-content-block .items .location-8,
-  .third-content-block .items .location-9 {
+  .third-content-block .items .location-3 {
     position: absolute;
     top: 200px; } }
 
@@ -552,14 +480,8 @@ footer {
     background-position: 50% 60%; }
   .first-content-block .destinations-item .items .location,
   .first-content-block .destinations-item .items .location-2,
-  .first-content-block .destinations-item .items .location-3,
-  .first-content-block .destinations-item .items .location-4,
-  .first-content-block .destinations-item .items .location-5,
   .first-content-block .destinations-item-2 .items .location,
-  .first-content-block .destinations-item-2 .items .location-2,
-  .first-content-block .destinations-item-2 .items .location-3,
-  .first-content-block .destinations-item-2 .items .location-4,
-  .first-content-block .destinations-item-2 .items .location-5 {
+  .first-content-block .destinations-item-2 .items .location-2 {
     position: absolute;
     top: 140px; }
   footer .col-lg-2 h5 {
@@ -582,10 +504,7 @@ footer {
     border: none;
     background-color: #e7434e;
     border-radius: 0px; }
-  .third-content-block .items .location-6,
-  .third-content-block .items .location-7,
-  .third-content-block .items .location-8,
-  .third-content-block .items .location-9 {
+  .third-content-block .items .location-3 {
     position: absolute;
     top: 130px; } }
 
@@ -622,13 +541,7 @@ footer {
     position: absolute;
     top: 200px; }
   .first-content-block .destinations-item .items .location-2,
-  .first-content-block .destinations-item .items .location-3,
-  .first-content-block .destinations-item .items .location-4,
-  .first-content-block .destinations-item .items .location-5,
-  .first-content-block .destinations-item-2 .items .location-2,
-  .first-content-block .destinations-item-2 .items .location-3,
-  .first-content-block .destinations-item-2 .items .location-4,
-  .first-content-block .destinations-item-2 .items .location-5 {
+  .first-content-block .destinations-item-2 .items .location-2 {
     position: absolute;
     top: 250px; }
   .second-content-block .parallax-window .second-content-text h1 {
@@ -641,10 +554,7 @@ footer {
     -ms-flex-pack: center;
         justify-content: center;
     margin-bottom: 2%; }
-  .third-content-block .items .price,
-  .third-content-block .items .price-2,
-  .third-content-block .items .price-3,
-  .third-content-block .items .price-4 {
+  .third-content-block .items .price {
     position: absolute;
     top: 20px;
     left: 25px;
@@ -654,20 +564,11 @@ footer {
     height: 30px;
     background-color: #e7434e;
     border-radius: 5px; }
-    .third-content-block .items .price .test,
-    .third-content-block .items .price-2 .test,
-    .third-content-block .items .price-3 .test,
-    .third-content-block .items .price-4 .test {
+    .third-content-block .items .price .test {
       padding-top: 5px; }
-      .third-content-block .items .price .test p,
-      .third-content-block .items .price-2 .test p,
-      .third-content-block .items .price-3 .test p,
-      .third-content-block .items .price-4 .test p {
+      .third-content-block .items .price .test p {
         font-size: 12px; }
-  .third-content-block .items .location-6,
-  .third-content-block .items .location-7,
-  .third-content-block .items .location-8,
-  .third-content-block .items .location-9 {
+  .third-content-block .items .location-3 {
     position: absolute;
     top: 240px; }
   footer .row {
@@ -708,10 +609,7 @@ footer {
   .first-content-block .destinations-item .items .location {
     position: absolute;
     top: 130px; }
-  .third-content-block .items .location-6,
-  .third-content-block .items .location-7,
-  .third-content-block .items .location-8,
-  .third-content-block .items .location-9 {
+  .third-content-block .items .location-3 {
     position: absolute;
     top: 190px; } }
 
@@ -742,7 +640,9 @@ footer {
     .first-content-block .statistics-bar .col-lg-3 p {
       font-size: 9px; }
   .first-content-block .more-destinations button {
-    padding: 15px 25px; }
+    padding: 15px 20px; }
+    .first-content-block .more-destinations button a {
+      font-size: 12px; }
   .first-content-block .destinations-item .items .location,
   .first-content-block .destinations-item-2 .items .location {
     position: absolute;
@@ -751,35 +651,25 @@ footer {
   .first-content-block .destinations-item .items .location p,
   .first-content-block .destinations-item .items .location-2 h4,
   .first-content-block .destinations-item .items .location-2 p,
-  .first-content-block .destinations-item .items .location-3 h4,
-  .first-content-block .destinations-item .items .location-3 p,
-  .first-content-block .destinations-item .items .location-4 h4,
-  .first-content-block .destinations-item .items .location-4 p,
-  .first-content-block .destinations-item .items .location-5 h4,
-  .first-content-block .destinations-item .items .location-5 p,
   .first-content-block .destinations-item-2 .items .location h4,
   .first-content-block .destinations-item-2 .items .location p,
   .first-content-block .destinations-item-2 .items .location-2 h4,
-  .first-content-block .destinations-item-2 .items .location-2 p,
-  .first-content-block .destinations-item-2 .items .location-3 h4,
-  .first-content-block .destinations-item-2 .items .location-3 p,
-  .first-content-block .destinations-item-2 .items .location-4 h4,
-  .first-content-block .destinations-item-2 .items .location-4 p,
-  .first-content-block .destinations-item-2 .items .location-5 h4,
-  .first-content-block .destinations-item-2 .items .location-5 p {
+  .first-content-block .destinations-item-2 .items .location-2 p {
     font-size: 20px; }
+  .first-content-block .destinations-item .portugal .qty,
+  .first-content-block .destinations-item-2 .portugal .qty {
+    height: 30px; }
+    .first-content-block .destinations-item .portugal .qty .test,
+    .first-content-block .destinations-item-2 .portugal .qty .test {
+      padding-top: 5px; }
   .second-content-block .parallax-window .second-content-btn button {
-    padding: 15px 25px; }
-  .third-content-block .items .location-6,
-  .third-content-block .items .location-7,
-  .third-content-block .items .location-8,
-  .third-content-block .items .location-9 {
+    padding: 15px 20px; }
+    .second-content-block .parallax-window .second-content-btn button a {
+      font-size: 12px; }
+  .third-content-block .items .location-3 {
     position: absolute;
     top: 120px; }
-    .third-content-block .items .location-6 .map-location p,
-    .third-content-block .items .location-7 .map-location p,
-    .third-content-block .items .location-8 .map-location p,
-    .third-content-block .items .location-9 .map-location p {
+    .third-content-block .items .location-3 .map-location p {
       font-size: 12px; } }
 
 @media screen and (max-width: 360px) {
@@ -788,18 +678,9 @@ footer {
     position: absolute;
     top: 60px; }
   .first-content-block .destinations-item .items .location-2,
-  .first-content-block .destinations-item .items .location-3,
-  .first-content-block .destinations-item .items .location-4,
-  .first-content-block .destinations-item .items .location-5,
-  .first-content-block .destinations-item-2 .items .location-2,
-  .first-content-block .destinations-item-2 .items .location-3,
-  .first-content-block .destinations-item-2 .items .location-4,
-  .first-content-block .destinations-item-2 .items .location-5 {
+  .first-content-block .destinations-item-2 .items .location-2 {
     position: absolute;
     top: 180px; }
-  .third-content-block .items .location-6,
-  .third-content-block .items .location-7,
-  .third-content-block .items .location-8,
-  .third-content-block .items .location-9 {
+  .third-content-block .items .location-3 {
     position: absolute;
     top: 90px; } }

@@ -176,6 +176,7 @@ header {
                 border: none;
                 width: 100%;
                 padding-left: 5%;
+                color: #404040;
             }
             button {
                 position: absolute;
@@ -241,23 +242,14 @@ header {
             opacity: 1;
             transition: opacity .5s;
         }
-        .dolphina:hover .img-responsive,
-        .sense:hover .img-responsive,
-        .italy:hover .img-responsive,
-        .monaco:hover .img-responsive,
-        .palma:hover .img-responsive,
-        .ibiza:hover .img-responsive,
-        .portugal:hover .img-responsive {
+        .items:hover .img-responsive {
             opacity: .5;
         }
         .items {
             position: relative;
             cursor: pointer;
-            .qty,
-            .qty-2,
-            .qty-3,
-            .qty-4,
-            .qty-5 {
+            .qty
+             {
                 position: absolute;
                 top: 15px;
                 left: 25px;
@@ -276,10 +268,8 @@ header {
                 }
             }
             .location,
-            .location-2,
-            .location-3,
-            .location-4,
-            .location-5 {
+            .location-2
+            {
                 position: absolute;
                 top: 275px;
                 left: 25px;
@@ -378,19 +368,14 @@ header {
         opacity: 1;
         transition: opacity .5s;
     }
-    .dolphina:hover .img-responsive,
-    .sense:hover .img-responsive,
-    .cruiser:hover .img-responsive,
-    .cruisers:hover .img-responsive {
+    .items:hover .img-responsive {
         opacity: .5;
     }
     .items {
         position: relative;
         cursor: pointer;
-        .price,
-        .price-2,
-        .price-3,
-        .price-4 {
+        .price
+         {
             position: absolute;
             top: 30px;
             left: 25px;
@@ -410,10 +395,8 @@ header {
                 color: #ffffff;
             }
         }
-        .location-6,
-        .location-7,
-        .location-8,
-        .location-9 {
+        .location-3
+        {
             position: absolute;
             top: 250px;
             left: 25px;
@@ -528,10 +511,8 @@ footer {
         .destinations-item-2 {
             .items {
                 .location,
-                .location-2,
-                .location-3,
-                .location-4,
-                .location-5 {
+                .location-2
+                {
                     position: absolute;
                     top: 180px;
                 }
@@ -540,10 +521,7 @@ footer {
     }
     .third-content-block {
         .items {
-            .location-6,
-            .location-7,
-            .location-8,
-            .location-9 {
+            .location-3{
                 position: absolute;
                 top: 200px;
             }
@@ -560,10 +538,8 @@ footer {
         .destinations-item-2 {
             .items {
                 .location,
-                .location-2,
-                .location-3,
-                .location-4,
-                .location-5 {
+                .location-2
+                {
                     position: absolute;
                     top: 140px;
                 }
@@ -607,10 +583,7 @@ footer {
     }
     .third-content-block {
         .items {
-            .location-6,
-            .location-7,
-            .location-8,
-            .location-9 {
+            .location-3 {
                 position: absolute;
                 top: 130px;
             }
@@ -659,10 +632,8 @@ footer {
                     position: absolute;
                     top: 200px;
                 }
-                .location-2,
-                .location-3,
-                .location-4,
-                .location-5 {
+                .location-2
+                 {
                     position: absolute;
                     top: 250px;
                 }
@@ -688,10 +659,8 @@ footer {
             margin-bottom: 2%;
         }
         .items {
-            .price,
-            .price-2,
-            .price-3,
-            .price-4 {
+            .price
+             {
                 position: absolute;
                 top: 20px;
                 left: 25px;
@@ -708,10 +677,7 @@ footer {
                     }
                 }
             }
-            .location-6,
-            .location-7,
-            .location-8,
-            .location-9 {
+            .location-3 {
                 position: absolute;
                 top: 240px;
             }
@@ -780,10 +746,7 @@ footer {
     }
     .third-content-block {
         .items {
-            .location-6,
-            .location-7,
-            .location-8,
-            .location-9 {
+            .location-3 {
                 position: absolute;
                 top: 190px;
             }
@@ -836,44 +799,54 @@ footer {
         }
         .more-destinations {
             button {
-                padding: 15px 25px;
+                padding: 15px 20px;
+                a{
+                	font-size:12px;
+                }
             }
         }
         .destinations-item,
-        .destinations-item-2 {
+        .destinations-item-2 {        	
             .items {
                 .location {
                     position: absolute;
                     top: 90px;
-                }
+                }                
                 .location,
-                .location-2,
-                .location-3,
-                .location-4,
-                .location-5 {
+                .location-2
+                {
                     h4,
                     p {
                         font-size: 20px;
                     }
                 }
             }
+            .portugal{
+            	.qty{
+            		height:30px;
+            		.test{
+            			padding-top: 5px;
+            		}
+            	}
+            }
+
         }
     }
     .second-content-block {
         .parallax-window {
             .second-content-btn {
                 button {
-                    padding: 15px 25px;
+                    padding: 15px 20px;
+                    a{
+                	font-size:12px;
+                }
                 }
             }
         }
     }
     .third-content-block {
         .items {
-            .location-6,
-            .location-7,
-            .location-8,
-            .location-9 {
+            .location-3 {
                 position: absolute;
                 top: 120px;
                 .map-location {
@@ -895,10 +868,9 @@ footer {
                     position: absolute;
                     top: 60px;
                 }
-                .location-2,
-                .location-3,
-                .location-4,
-                .location-5 {
+                .location-2
+                
+               {
                     position: absolute;
                     top: 180px;
                 }
@@ -907,10 +879,7 @@ footer {
     }
     .third-content-block {
         .items {
-            .location-6,
-            .location-7,
-            .location-8,
-            .location-9 {
+            .location-3{
                 position: absolute;
                 top: 90px;
                 

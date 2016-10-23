@@ -86,50 +86,9 @@ $(function() {
 });
 
 $(document).ready(function() {
-    $('.portugal').hover(function(){
-        $('.qty').slideToggle();
-        $('.location').slideToggle();
-
-    });
-    $('.ibiza').hover(function(){
-        $('.qty-2').slideToggle();
-        $('.location-2').slideToggle();
-
-    });
-     $('.palma').hover(function(){
-        $('.qty-3').slideToggle();
-        $('.location-3').slideToggle();
-
-    });
-      $('.italy').hover(function(){
-        $('.qty-4').slideToggle();
-        $('.location-4').slideToggle();
-
-    });
-       $('.monaco').hover(function(){
-        $('.qty-5').slideToggle();
-        $('.location-5').slideToggle();
-
-    });
-       $('.dolphina').hover(function(){
-        $('.price').slideToggle();
-        $('.location-6').slideToggle();
-
-    });
-       $('.sense').hover(function(){
-        $('.price-2').slideToggle();
-        $('.location-7').slideToggle();
-
-    });
-       $('.cruiser').hover(function(){
-        $('.price-3').slideToggle();
-        $('.location-8').slideToggle();
-
-    });
-       $('.cruisers').hover(function(){
-        $('.price-4').slideToggle();
-        $('.location-9').slideToggle();
-
-    });
+    $('.items').hover(function(){
+  $(this).find('.items-hover').stop().slideToggle();
+    });    
+       
 
 });
